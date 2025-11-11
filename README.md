@@ -50,7 +50,7 @@ JEG SKAL LAGE BACKEND FØRST. FRONTEND KOMMER ETTER.
    - Testing
 
  # Mappestruktur
-
+```bash
 Prosjekt_IT_VG2/
 ├──  Prosjekt_dokumentasjon/        # All dokumentasjon, skisser og planer
 │   ├──  Figma_skisser/             # Figma-filer, lenker og skjermbilder
