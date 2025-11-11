@@ -52,18 +52,18 @@ JEG SKAL LAGE BACKEND FØRST. FRONTEND KOMMER ETTER.
  # Mappestruktur
 ```bash
 Prosjekt_IT_VG2/
-├──  Prosjekt_dokumentasjon/        # All dokumentasjon, skisser og planer
-│   ├──  Figma_skisser/             # Figma-filer, lenker og skjermbilder
-│   ├──  teknisk_dokumentasjon/     # Teknisk dokumentasjon av prosjektet
-│   └──  brukerveiledning/          # Veiledning for brukere og installasjon
+├──  Prosjekt_dokumentasjon/        
+│   ├──  Figma_skisser/             
+│   ├──  teknisk_dokumentasjon/     
+│   └──  brukerveiledning/          
 │
-├──  Prosjekt_Kode/                 # All kode for backend og frontend
-│   ├──  backend/                   # Flask-server og database-logikk
-│   │   ├──  venv/                  # Virtuelt miljø (ikke nødvendig å laste opp til GitHub)
-│   │   └── main.py                   # Hovedfil for Flask-applikasjonen
+├──  Prosjekt_Kode/                 
+│   ├──  backend/                   
+│   │   ├──  venv/                  
+│   │   └── main.py                  
 │   │
-│   └──  frontend/                  # HTML og CSS for brukergrensesnitt
-│       ├──  bilder/                # Bilder brukt i nettsiden
-│       ├──  css/                   # CSS-fil)
-│       └──  html/                  # HTML-fil
+│   └──  frontend/                  
+│       ├──  bilder/               
+│       ├──  css/                   
+│       └──  html/                  
 
