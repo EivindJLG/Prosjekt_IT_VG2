@@ -15,7 +15,7 @@ Hva skal jeg lage de neste ukene?
 - Skisser på figma
 - Liten prototype
 - Planlegge design på nettsiden
-- Database (MariaDB eller MongoDB)
+- Database (MariaDB)
 - Web-server (Bruk av Flask)
 
 JEG SKAL LAGE BACKEND FØRST. FRONTEND KOMMER ETTER.
@@ -27,7 +27,7 @@ JEG SKAL LAGE BACKEND FØRST. FRONTEND KOMMER ETTER.
    - Python Flask (Web-server)
    - HTML (Innhold til nettsiden)
    - CSS (Design av nettsiden)
-- Database (MariaDB / MongoDB)
+   - Database (MariaDB)
 
 # Mitt prosjekt skal vise kompetanse innenfor IT-fagene (drift, utvikling og brukerstøtte)
 
@@ -42,7 +42,7 @@ JEG SKAL LAGE BACKEND FØRST. FRONTEND KOMMER ETTER.
    - Python
    - Virtual environment (VENV)
    - Design
-   - MariaDB / MongoDB
+   - MariaDB
 
 - Brukerstøtte
    - Brukerveiledninger
