@@ -1,12 +1,11 @@
-from flask import Flask, render_template
-from flask_mysqldb import MySQL
+from flask import Flask, render_template 
+from mariadb import connect
 
 app = Flask(__name__)
 
-# MariaDB
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'eivind'
-app.config['MYSQL_PASSWORD'] = 'deeznuts'
-app.config['MYSQL_DB'] = 'Prosjekt'
+app.route('/')
+def index():   
+    return render_template('index.html')
 
-mysql = MySQL(app)
+if __name__ == '__main__':
+    app.run(debug=True)
