@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameGear</title>
     <link rel="stylesheet" href="/frontend/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>GameGear</title>
 </head>
 <body>
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">GAMEGEAR</div>
         <ul class="nav-links">
-            <li><a href="#">Produkter</a></li>
+            <li><a href="#featured-products">Produkter</a></li>
             <li><a href="#">Kategorier</a></li>
             <li><a href="#">Om oss</a></li>
         </ul>
@@ -28,107 +29,118 @@
             Løft spillopplevelsen din med vårt nøye kuraterte utvalg av høyytelsesperiferi og tilbehør for 
             seriøse gamere.
         </p>
-        <a href="#" class="cta-btn">Handle nå</a>
+        <a href="#featured-products" class="cta-btn">Handle nå</a>
     </section>
 
-<section class="featured-products">
-    <div class="title-row">
-        <h2>Utvalgte Produkter</h2>
-        <a href="/produkter" class="product-count">6 produkter</a>
-    </div>
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured-products" id="featured-products">
+        <div class="title-row">
+            <h2>Utvalgte Produkter</h2>
+            <span class="product-count">6 produkter</span>
+        </div>
 
-    <div class="product-grid">
+        <div class="product-grid">
 
-        <!-- Produkt 1 -->
-        <div class="product-card">
-            <img src="/frontend/static/bilder/PC_Core.png" alt="GameGear-PC">
+            <!-- Produkt 1 -->
+            <div class="product-card">
+                <img src="/frontend/static/bilder/PC_Core.png" alt="GameGear-PC">
+                <div class="info">
+                    <span class="category">PREBUILT</span>
+                    <h3>GameGear-PC Core Gaming i55</h3>
+                    <span class="price">11 499 kr</span>
+                    <button class="add-btn"><span class="icon">🛒</span> Legg til</button>
+                </div>
+            </div>
 
-            <div class="info">
-                <span class="category">PREBUILT</span>
-                <h3>GameGear-PC Core Gaming i55</h3>
-                <span class="price">11 499 kr</span>
+            <!-- Produkt 2 -->
+            <div class="product-card">
+                <img src="/frontend/static/bilder/RazerViperV3Pro.png" alt="Razer Viper V3 Pro">
+                <div class="info">
+                    <span class="category">MUS</span>
+                    <h3>Razer Viper V3 Pro</h3>
+                    <span class="price">1299 kr</span>
+                    <button class="add-btn"><span class="icon">🛒</span> Legg til</button>
+                </div>
+            </div>
 
-                <button class="add-btn">
-                    <span class="icon">🛒</span> Legg til
-                </button>
+            <!-- Produkt 3 -->
+            <div class="product-card">
+                <img src="/frontend/static/bilder/Wooting_80HE.png" alt="Wooting 80HE">
+                <div class="info">
+                    <span class="category">TASTATUR</span>
+                    <h3>Wooting 80HE</h3>
+                    <span class="price">1999 kr</span>
+                    <button class="add-btn"><span class="icon">🛒</span> Legg til</button>
+                </div>
+            </div>
+
+            <!-- Produkt 4 -->
+            <div class="product-card">
+                <img src="/frontend/static/bilder/MSI_Cyborg.png" alt="MSI Cyborg">
+                <div class="info">
+                    <span class="category">GAMING LAPTOP</span>
+                    <h3>MSI Cyborg A15 AI 15,6" FHD 144Hz</h3>
+                    <span class="price">13 790 kr</span>
+                    <button class="add-btn"><span class="icon">🛒</span> Legg til</button>
+                </div>
+            </div>
+
+            <!-- Produkt 5 -->
+            <div class="product-card">
+                <img src="/frontend/static/bilder/AOC_Gamingskjerm.png" alt="AOC Gamingskjerm">
+                <div class="info">
+                    <span class="category">SKJERM</span>
+                    <h3>AOC 27" gamingskjerm Q27G42ZE</h3>
+                    <span class="price">2 990 kr</span>
+                    <button class="add-btn"><span class="icon">🛒</span> Legg til</button>
+                </div>
+            </div>
+
+            <!-- Produkt 6 -->
+            <div class="product-card">
+                <img src="/frontend/static/bilder/HyperXCloudAlpha_2.png" alt="HyperX Cloud Alpha 2 Trådløst">
+                <div class="info">
+                    <span class="category">Headset</span>
+                    <h3>HyperX Cloud Alpha 2 Trådløst</h3>             
+                    <span class="price">2 549 kr</span>
+                    <button class="add-btn"><span class="icon">🛒</span> Legg til</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>GAMEGEAR</h3>
+                <p>Premium gaming utstyr for seriøse gamere.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Butikk</h3>
+                <a href="#">Alle Produkter</a>
+                <a href="#">Nyheter</a>
+                <a href="#">Bestselgere</a>
+            </div>
+            <div class="footer-column">
+                <h3>Kundeservice</h3>
+                <a href="#">Kontakt oss</a>
+                <a href="#">Frakt</a>
+                <a href="#">Retur</a>
+            </div>
+            <div class="footer-column">
+                <h3>Selskap</h3>
+                <a href="#">Om oss</a>
+                <a href="#">Personvern</a>
+                <a href="#">Vilkår</a>
             </div>
         </div>
 
-        <!-- Produkt 2 -->
-        <div class="product-card">
-            <img src="/frontend/static/bilder/RazerViperV3Pro.png" alt="Razer Viper V3 Pro">
-
-            <div class="info">
-                <span class="category">MUS</span>
-                <h3>Razer Viper V3 Pro</h3>
-                <span class="price">1299 kr</span>
-
-                <button class="add-btn">
-                    <span class="icon">🛒</span> Legg til
-                </button>
-            </div>
+        <div class="footer-bottom">
+            © 2025 GAMEGEAR. Alle rettigheter reservert.
         </div>
-
-        <!-- Produkt 3 -->
-        <div class="product-card">
-            <img src="/frontend/static/bilder/Wooting_80HE.png" alt="Wooting 80HE">
-
-            <div class="info">
-                <span class="category">TASTATUR</span>
-                <h3>Wooting 80HE</h3>
-                <span class="price">1999 kr</span>
-
-                <button class="add-btn">
-                    <span class="icon">🛒</span> Legg til
-                </button>
-            </div>
-        </div>
-                <!-- Produkt 4 -->
-        <div class="product-card">
-            <img src="/frontend/static/bilder/MSI_Cyborg.png" alt="MSI Cyborg">
-
-            <div class="info">
-                <span class="category">GAMING LAPTOP</span>
-                <h3>MSI Cyborg A15 AI 15,6" FHD 144Hz</h3>
-                <span class="price">13 790 kr</span>
-
-                <button class="add-btn">
-                    <span class="icon">🛒</span> Legg til
-                </button>
-            </div>
-        </div>
-
-        <!-- Produkt 5 -->
-        <div class="product-card">
-            <img src="/frontend/static/bilder/AOC_Gamingskjerm.png" alt="AOC Gamingskjerm">
-
-            <div class="info">
-                <span class="category">SKJERM</span>
-                <h3>AOC 27" gamingskjerm Q27G42ZE</h3>
-                <span class="price">2 990 kr</span>
-
-                <button class="add-btn">
-                    <span class="icon">🛒</span> Legg til
-                </button>
-            </div>
-        </div>
-
-        <!-- Produkt 6 -->
-        <div class="product-card">
-            <img src="/frontend/static/bilder/HyperXCloudAlpha_2.png" alt="HyperX Cloud Alpha 2 Trådløst">
-
-            <div class="info">
-                <span class="category">Headset</span>
-                <h3>HyperX Cloud Alpha 2 Trådløst</h3>
-                <span class="price">3 549 kr</span>
-
-                <button class="add-btn">
-                    <span class="icon">🛒</span> Legg til
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
+    </footer>
 
 </body>
 </html>

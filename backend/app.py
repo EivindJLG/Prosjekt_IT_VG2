@@ -6,10 +6,10 @@ app = Flask(__name__)
 def get_db():
     try:
         conn = mysql.connector.connect(
-            host="localhost",      
+            host="localhost",    
             user="eivind",       
             password="eivind123",
-            database="Prosjekt"
+            database="Prosjekt" 
         )
         return conn
     except mysql.connector.Error as e:
@@ -61,4 +61,3 @@ def index():
 if __name__ == '__main__':
     create_table()     # <-- makes sure table exists when starting Flask
     app.run(host="0.0.0.0", port=6767, debug=True)
-
