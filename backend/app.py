@@ -39,7 +39,6 @@ def create_table():
     conn.commit()
     cursor.close()
     conn.close()
-    print("Table 'produkter' is ready.")
 
 create_table()
 
