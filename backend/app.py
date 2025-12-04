@@ -54,7 +54,7 @@ def index():
     cursor.close()
     conn.close()
 
-    return render_template('index.html', products=products)
+    return render_template('index.html', produkter=products)
 
 
 if __name__ == '__main__':
