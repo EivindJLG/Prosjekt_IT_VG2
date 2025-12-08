@@ -3,7 +3,7 @@ import mysql.connector
 import os
 
 # Dir som leder til frontend mapper
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # project/
+BASE_DIR = os.path.dirname(os.path.dirname(__file__)) #Prosjektet
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'frontend', 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'frontend', 'static')
 
