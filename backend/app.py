@@ -24,31 +24,6 @@ def get_db():
         print(f"Database connection error: {e}")
         return None
 
-def create_table():
-    conn = get_db()
-    if conn is None:
-        print("Kunne ikke koble til") 
-        return
-
-    cursor = conn.cursor()
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS produkter (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(255),
-            category VARCHAR(100),
-            price DECIMAL(10,2),
-            description TEXT,
-            image_url VARCHAR(255),
-            stock INT DEFAULT 0
-        );
-    """)
-
-    conn.commit()
-    cursor.close()
-    conn.close()
-
-create_table()
 
 @app.route('/')
 def index():
@@ -56,15 +31,15 @@ def index():
     if conn is None:
         return "Kunne ikke koble til databasen"
     
-    cursor = conn.cursor()
+    cursor = conn.cursor(dictionary=True)
     cursor.execute("SELECT * FROM produkter;")
     products = cursor.fetchall()
     cursor.close()
     conn.close()
 
+
     return render_template('index.html', products=products)
 
 
 if __name__ == '__main__':
-    create_table()     # <-- makes sure table exists when starting Flask
     app.run(host="0.0.0.0", port=6767, debug=True)
