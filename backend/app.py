@@ -1,8 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import mysql.connector
+import os
 
-app = Flask(__name__)
+# Dir som leder til frontend mapper
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # project/
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'frontend', 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'frontend', 'static')
 
+# Flask app med dir som leder til template og static folder
+app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
+
+# Database kobling
 def get_db():
     try:
         conn = mysql.connector.connect(
@@ -19,7 +27,7 @@ def get_db():
 def create_table():
     conn = get_db()
     if conn is None:
-        print("Could not connect to database.")
+        print("Kunne ikke koble til") 
         return
 
     cursor = conn.cursor()
@@ -39,7 +47,6 @@ def create_table():
     conn.commit()
     cursor.close()
     conn.close()
-    print("Table 'produkter' is ready.")
 
 create_table()
 

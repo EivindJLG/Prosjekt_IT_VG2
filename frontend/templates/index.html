@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameGear</title>
-    <link rel="stylesheet" href="/frontend/static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -43,7 +43,7 @@
 
             <!-- Produkt 1 -->
             <div class="product-card">
-                <img src="/frontend/static/bilder/PC_Core.png" alt="GameGear-PC">
+                <img src="{{ url_for('static', filename='bilder/PC_Core.png') }}" alt="GameGear-PC">
                 <div class="info">
                     <span class="category">PREBUILT</span>
                     <h3>GameGear-PC Core Gaming i55</h3>
@@ -54,7 +54,7 @@
 
             <!-- Produkt 2 -->
             <div class="product-card">
-                <img src="/frontend/static/bilder/RazerViperV3Pro.png" alt="Razer Viper V3 Pro">
+                <img src="{{ url_for('static', filename='bilder/RazerViperV3Pro.png') }}" alt="Razer Viper V3 Pro">
                 <div class="info">
                     <span class="category">MUS</span>
                     <h3>Razer Viper V3 Pro</h3>
@@ -65,7 +65,7 @@
 
             <!-- Produkt 3 -->
             <div class="product-card">
-                <img src="/frontend/static/bilder/Wooting_80HE.png" alt="Wooting 80HE">
+                <img src="{{ url_for('static', filename='bilder/Wooting_80HE.png') }}" alt="Wooting 80HE">
                 <div class="info">
                     <span class="category">TASTATUR</span>
                     <h3>Wooting 80HE</h3>
@@ -76,7 +76,7 @@
 
             <!-- Produkt 4 -->
             <div class="product-card">
-                <img src="/frontend/static/bilder/MSI_Cyborg.png" alt="MSI Cyborg">
+                <img src="{{ url_for('static', filename='bilder/MSI_Cyborg.png') }}" alt="MSI Cyborg">
                 <div class="info">
                     <span class="category">GAMING LAPTOP</span>
                     <h3>MSI Cyborg A15 AI 15,6" FHD 144Hz</h3>
@@ -87,7 +87,7 @@
 
             <!-- Produkt 5 -->
             <div class="product-card">
-                <img src="/frontend/static/bilder/AOC_Gamingskjerm.png" alt="AOC Gamingskjerm">
+                <img src="{{ url_for('static', filename='bilder/AOC_Gamingskjerm.png') }}" alt="AOC Gamingskjerm">
                 <div class="info">
                     <span class="category">SKJERM</span>
                     <h3>AOC 27" gamingskjerm Q27G42ZE</h3>
@@ -98,7 +98,7 @@
 
             <!-- Produkt 6 -->
             <div class="product-card">
-                <img src="/frontend/static/bilder/HyperXCloudAlpha_2.png" alt="HyperX Cloud Alpha 2 Trådløst">
+                <img src="{{ url_for('static', filename='bilder/HyperXCloudAlpha_2.png') }}" alt="HyperX Cloud Alpha 2 Trådløst">
                 <div class="info">
                     <span class="category">Headset</span>
                     <h3>HyperX Cloud Alpha 2 Trådløst</h3>             
