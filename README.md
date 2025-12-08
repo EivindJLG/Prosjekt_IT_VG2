@@ -70,5 +70,4 @@ Prosjekt_IT_VG2/
 │ └── templates/
 │ └── index.html
 ├── .gitignore
-└── README.md                  
-
+└── README.md
