@@ -37,6 +37,7 @@ def index():
     cursor.close()
     conn.close()
 
+    print("Fetched:", products)  # <-- DEBUG: prints in terminal
 
     return render_template('index.html', products=products)
 
