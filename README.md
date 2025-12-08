@@ -52,18 +52,23 @@ JEG SKAL LAGE BACKEND FØRST. FRONTEND KOMMER ETTER.
  # Mappestruktur
 ```bash
 Prosjekt_IT_VG2/
-├──  Prosjekt_dokumentasjon/        
-│   ├──  Figma_skisser/             
-│   ├──  teknisk_dokumentasjon/     
-│   └──  brukerveiledning/          
-│
-├──  Prosjekt_Kode/                 
-│   ├──  backend/                   
-│   │   ├──  venv/                  
-│   │   └── main.py                  
-│   │
-│   └──  frontend/                  
-│       ├──  bilder/               
-│       ├──  css/                   
-│       └──  html/                  
+├── backend/
+│ └── app.py
+├── database/
+│ └── db.sql
+├── frontend/
+│ ├── static/
+│ │ ├── bilder/
+│ │ │ ├── AOC_Gaming.png
+│ │ │ ├── HyperXCloud.png
+│ │ │ ├── MSI_Cyborg.png
+│ │ │ ├── PC_Core.png
+│ │ │ ├── RazerViperV3.png
+│ │ │ └── Wooting_80H.png
+│ │ └── css/
+│ │ └── style.css
+│ └── templates/
+│ └── index.html
+├── .gitignore
+└── README.md                  
 
