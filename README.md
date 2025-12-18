@@ -69,5 +69,7 @@ Prosjekt_IT_VG2/
 │ │ └── style.css
 │ └── templates/
 │ └── index.html
+│ └── kontakt.html
 ├── .gitignore
 └── README.md
+└── requirements.txt
